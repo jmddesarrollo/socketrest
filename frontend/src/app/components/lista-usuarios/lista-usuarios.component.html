@@ -1,1 +1,10 @@
-<p>lista-usuarios works!</p>
+<h1>Usuarios</h1>
+<hr>
+
+<ul>
+    <li *ngFor="let usuario of usuariosActivos | async">
+        {{usuario.nombre}}
+        <span>{{usuario.sala}}</span>
+        <span>{{usuario.id}}</span>
+    </li>
+</ul>

@@ -1,0 +1,11 @@
+<h1>Mensajes</h1>
+<hr>
+<div id="chat-mensajes">
+    <li class="w3-ul w3-border-bottom" *ngFor="let mensaje of mensajes">
+        {{mensaje.de}}: {{mensaje.cuerpo}}
+    </li>
+
+</div>
+<form (ngSubmit)="enviar()">
+    <input type="text" name="texto" [(ngModel)]="texto" class="w3-input" placeholder="Escribir mensaje..." autofocus autocomplete="off">
+</form>

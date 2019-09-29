@@ -1,0 +1,12 @@
+<div class="w3-container">
+    <div class="w3-card-4">
+        <form (ngSubmit)="ingresar()" class="w3-margin-top">
+            <div>
+                <input type="text" name="nombre" [(ngModel)]="nombre" placeholder="Nombre" autofocus class="w3-input" autocomplete="off">
+            </div>
+            <div class="w3-center">
+                <button [disabled]="nombre.trim().length === 0" class="w3-btn w3-blue w3-margin-top w3-margin-bottom">Ingresar</button>
+            </div>
+        </form>
+    </div>
+</div>

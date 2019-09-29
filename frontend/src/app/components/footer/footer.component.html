@@ -1,0 +1,6 @@
+<footer class="w3-black w3-bottom w3-center">
+    <p>Server Status:
+        <span class="w3-tag w3-blue" *ngIf="wsService.socketStatus">Online</span>
+        <span class="w3-tag w3-red" *ngIf="!wsService.socketStatus">Offline</span>
+    </p>
+</footer>
